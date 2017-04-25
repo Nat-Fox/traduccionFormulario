@@ -21,8 +21,9 @@ translate();
 function mostrarData() {
     var email = document.getElementById('inputEmail').value;
     var pass = document.getElementById('inputPassword').value;
+    //Escribo el contenido que quiero exponer en el HTML, titulo, email, password
     document.getElementById("printEmail").innerHTML = '<div><h4>Datos de formulario</h4></div>' +
-        '<div>El correo electrónico ingresado es:</div>' + email + '<div>La clave ingresada es:</div>';
-    document.getElementById("printPass").innerHTML = pass;
+        '<div>El correo electrónico ingresado es:</div>' + email;
+    document.getElementById("printPass").innerHTML = '<div>La clave ingresada es:</div>' + pass;
 
 }
